@@ -17,9 +17,15 @@
 
 ## <a name="shortd"></a>Short Description
 ### What's the problem?
-problemproblemproblem
+Singapore is expected to become a 
+<a href="https://www.rsis.edu.sg/rsis-publication/rsis/co15193-a-super-aged-singapore-policy-implications-for-a-smart-nation/#.XuOL8IHEmhA">“Super-Aged” country</a>
+in 2025, with the number of 
+<a href="https://www.todayonline.com/voices/more-seniors-living-alone-knowing-and-caring-our-neighbours-should-be-norm">elderly living alone in housing estates rising</a> 
+over the years. As the over-stretched emergency resources shrink due to reduced manpower, the country becomes increasingly dependent on Community First Responders (CFRs) to provide early intervention in emergency situations. For the elderly who lives alone at home, there is a potential risk that they are unable to receive medical assistance in times of need. This poses an issue for emergency response. Hence, to cope with the rising number of elderly and limited medical resources, there is a need for early detection with reduced false alarms for incidents involving the elderly.
+### How can technology help?
+Technology can assist to provide early detection for any incidents within homes of the elderly, especially those who live alone. It can be tapped upon to notify the CFRs to check in with the elderly in the event of a suspected incident, before raising the issue to higher authorities such as the SCDF. This can help provide more timely medical assistance to the elderly and reduce false alarms.
 ### Idea
-ideaideaidea
+A mesh of proximity sensors can be set up in the homes of the elderly to detect motions made by them. This idea assumes that the elderly will move around the house for his daily routine and activities, thus enabling the sensor to detect their motion. However, should the sensor not detect any movement for an extended period of time, it sends an alert to nearby CFRs through the MyResponders App, for them to check in with the elderly. With the early detection, CFRs can access the situation and call for emergency rescuers if required. Thus, decreasing the time that the elderly is left unattended after an incident, which can be a life saving measure. 
 
 ## <a name="pv"></a>Pitch Video
 <a href="URL TO VIDEO" target="_blank"><img src="LINK TO A SCREENSHOT OF VIDEO ON YOUTUBE" 
@@ -32,7 +38,7 @@ alt="Solution Pitch Video" width="240" height="180" border="10" /></a>
 3. Step 3
 
 ## <a name="longd"></a>Long Description
-<a href="LINK TO DESCRIPTION.MD">Link to the detailed solution here.</a>
+<a href="DESCRIPTION.MD">Link to the detailed solution here.</a>
 
 ## <a name="proad"></a>Project Roadmap
 Optional
@@ -49,9 +55,8 @@ Instructions on how to run the tests for the system (if possible)
 Link to a working demo (if possible)
 
 ## <a name="bwith"></a>Built With
-Service1
-Service2
-Service3
+Node-RED - Flow editor
+IBM IoT
 
 ## <a name="cont"></a>Contributing
 ## <a name="vers"></a>Versioning
