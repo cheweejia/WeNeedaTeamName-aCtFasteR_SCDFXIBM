@@ -7,8 +7,7 @@
 5. [Project Roadmap](#proad)
 6. [Getting Started](#gstart)
 7. [Test Runs](#trun)
-8. [Live Demo](#ldemo)
-9. [Built With](#bwith)
+8. [Built With](#bwith)
 
 ## <a name="shortd"></a>Short Description
 ### What's the problem?
@@ -39,18 +38,17 @@ alt="Solution Pitch Video" width="240" height="180" border="10" /></a>
 <a href="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/DESCRIPTION.md">Link to the detailed solution here.</a>
 
 ## <a name="proad"></a>Project Roadmap
-Optional
+<img src="ROADMAP" /></a>
 
 ## <a name="gstart"></a>Getting Started
 ### Prerequisites
-what 
+You will need an account on <a href="https://cloud.ibm.com/login">IBM</a>.
+
+
 ### Installing
 
 ## <a name="trun"></a>Test Runs
 Instructions on how to run the tests for the system (if possible)
-
-## <a name="ldemo"></a>Live Demo
-Link to a working demo (if possible)
 
 ## <a name="bwith"></a>Built With
 - Node-RED - Flow editor
