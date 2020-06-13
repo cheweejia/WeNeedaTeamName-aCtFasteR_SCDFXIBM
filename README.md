@@ -27,10 +27,13 @@ A mesh of proximity sensors can be set up in the homes of the elderly to detect 
 alt="Solution Pitch Video" width="240" height="180" border="10" /></a>
 
 ## <a name="archi"></a>Architecture
-<img src="LINK TO IMAGE" alt="Architecture of proposed solution" width="240" height="360" border="10" /></a>
-1. Step 1
-2. Step 2
-3. Step 3
+<img src="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/Architecture.png" border="10" /></a>
+1. Proximity sensors detect motion and sends data to IBM Watson IoT Platform.
+2. IoT application outputs a message in Node-RED for the data recorded.
+3. Function in Node-RED will trigger an alert message to be sent to the MyResponders App and a dashboard, in the event that there is inactivity for an extended period of time. 
+4. Database containing information of the elderly will release the address along with the alert message.
+5. MyResponders App will deploy the nearest CFR to check in with the elderly.
+6. Adminstrators can monitor the dashboard for incidents happening around Singapore.
 
 ## <a name="longd"></a>Long Description
 <a href="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/DESCRIPTION.md">Link to the detailed solution here.</a>
