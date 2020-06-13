@@ -9,11 +9,6 @@
 7. [Test Runs](#trun)
 8. [Live Demo](#ldemo)
 9. [Built With](#bwith)
-10. [Contributing](#cont)
-11. [Versioning](#vers)
-12. [Authors](#auth)
-13. [License](#licen)
-14. [Acknowledgements](#acknow)
 
 ## <a name="shortd"></a>Short Description
 ### What's the problem?
@@ -57,9 +52,3 @@ Link to a working demo (if possible)
 ## <a name="bwith"></a>Built With
 - Node-RED - Flow editor
 - IBM IoT
-
-## <a name="cont"></a>Contributing
-## <a name="vers"></a>Versioning
-## <a name="auth"></a>Authors
-## <a name="licen"></a>License
-## <a name="acknow"></a>Acknowledgements
