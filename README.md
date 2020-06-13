@@ -38,7 +38,7 @@ alt="Solution Pitch Video" width="240" height="180" border="10" /></a>
 3. Step 3
 
 ## <a name="longd"></a>Long Description
-<a href="DESCRIPTION.MD">Link to the detailed solution here.</a>
+<a href="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/DESCRIPTION.md">Link to the detailed solution here.</a>
 
 ## <a name="proad"></a>Project Roadmap
 Optional
@@ -55,8 +55,8 @@ Instructions on how to run the tests for the system (if possible)
 Link to a working demo (if possible)
 
 ## <a name="bwith"></a>Built With
-Node-RED - Flow editor
-IBM IoT
+- Node-RED - Flow editor
+- IBM IoT
 
 ## <a name="cont"></a>Contributing
 ## <a name="vers"></a>Versioning
