@@ -43,8 +43,8 @@ alt="Solution Pitch Video" width="240" height="180" border="10" /></a>
 ## <a name="gstart"></a>Getting Started
 ### Prerequisites
 You will need:
-- An account on <a href="https://cloud.ibm.com/login">IBM</a>.
-- Smartphone
+- An account on <a href="https://cloud.ibm.com/login">IBM Cloud</a>.
+- Smartphone (Android)
 
 ### Installing
 #### Step 1: Create an IoT app in the IBM Cloud
@@ -52,12 +52,12 @@ Work through the tutorial to <a href="https://developer.ibm.com/tutorials/how-to
 
 #### Step 2: Add a device that will send MQTT messages to the IBM Watson IoT Platform 
 1. An organization ID is assigned to your app, and you will need this ID later when developing the mobile app. In the following image, the organization ID is l0y3u1, which is displayed under your login information in the upper right corner of the dashboard. <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step002_1.png" alt="Screen capture of the service on the IBM Internet of Things Platform server and the organization ID highlighted"></a>
-2. Click tab Device Types, then click Add Device Type. In your organization, you can have multiple device types each with multiple devices. A device type is a group of devices that share characteristics; for example, they might provide the same sensor data. In our case, the device type name must be “Android” (this device type name is required by the app that you will use later).
-3. Click Next. A page is displayed where you can enter metadata about the device type, such as a serial number or model. You don’t need to specify this information for this tutorial. Just click Finish. <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step002_3.png" alt="Screen capture of the add device type page"></a>
-4. Click Register Devices. Enter the device ID. The device ID can be, for example, the MAC address of your smartphone. However, it must be unique within your organization only. Therefore, you might enter, as I did here, something like “112233445566”. <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step002_4.png" alt="Screen capture of the page where device parameters are entered"></a>
-5. Click Next. A page is displayed where you could enter metadata about the device. Leave it blank, and click Next.
-6. On the security page, enter a value for the authentication token. Remember this value for later. Then, click Next. <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step002_5.png" alt="Screen capture showing authentication token"></a>
-7. Click Finish.
+2. Click tab **Device Types**, then click **Add Device Type**. In your organization, you can have multiple device types each with multiple devices. A device type is a group of devices that share characteristics; for example, they might provide the same sensor data. In our case, the device type name must be “Android” (this device type name is required by the app that you will use later).
+3. Click **Next**. A page is displayed where you can enter metadata about the device type, such as a serial number or model. You don’t need to specify this information for this tutorial. Just click **Finish**. <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step002_3.png" alt="Screen capture of the add device type page"></a>
+4. Click **Register Devices**. Enter the device ID. The device ID can be, for example, the MAC address of your smartphone. However, it must be unique within your organization only. Therefore, you might enter, as I did here, something like “112233445566”. <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step002_4.png" alt="Screen capture of the page where device parameters are entered"></a>
+5. Click **Next**. A page is displayed where you could enter metadata about the device. Leave it blank, and click **Next**.
+6. On the security page, enter a value for the authentication token. Remember this value for later. Then, click **Next**. <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step002_5.png" alt="Screen capture showing authentication token"></a>
+7. Click **Finish**.
 Now you are ready to send MQTT messages from a device to the IBM Watson IoT Platform.
 
 #### Step 3: Install and configure the Android app
@@ -76,17 +76,17 @@ The IoT Starter app is now installed on your android device.
 Next you need to configure your Android App.
 
 1. Start the IoT Starter app.
-2. Click Skip tutorial.
+2. Click **Skip tutorial**.
 3. Enter the following parameters:
 - **Organisation**: The organization ID that was displayed on the IBM IoT server (at the start of ” “). For example, l0y3u1 in this tutorial.
 - **Device ID**: The device ID that you configured above. For example, “112233445566” in this tutorial.
 - **Auth Token**: The authorization token that you specified earlier.
 - Make sure that **Use SSL** is checked.
-4. Click Activate Sensor. Now the app collects data from the proximity sensor in your smartphone and sends the data to the IBM IoT server. The app displays the proximity data and the number of messages that were published or received.
+4. Click **Activate Sensor**. Now the app collects data from the proximity sensor in your smartphone and sends the data to the IBM IoT server. The app displays the proximity data and the number of messages that were published or received.
 
 #### Step 4: Verify that messages are being sent from your smartphone to the Watsons IoT Platform
 1. Back on your computer, open the IBM Watson IoT Platform page for your organization again
-2. In the left menu, click Devices. Your Android device is displayed. <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step004_2.png" alt="Screen capture of the Devices tab that lists the Android device"></a>
+2. In the left menu, click **Devices**. Your Android device is displayed. <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step004_2.png" alt="Screen capture of the Devices tab that lists the Android device"></a>
 3. Click the arrow icon on the right of your Device ID. This opens an new page where you can see “Recent Events”. You should see events coming from your smartphone.
 4. Click one of the events. The messages that are sent from your smartphone are in JSON format. They contain proximity and position data.
 
@@ -94,19 +94,19 @@ Next you need to configure your Android App.
 First you need to import the nodes ibm iot in and ibm iot out into your Node-RED application. These nodes allow you to easily connect to Watson IoT, but they are not in the palette by default. To do so, you need to create a continuous delivery toolchain and then add dependencies to the application.
 <br>
 1. Open the Overview page of the Node-RED starter application, which you created in Step 1.
-2. In the continuous delivery section of the dashboard, click EnableEnable toolchain <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_2.png"></a>
-3. On the Toolchain page, select Delivery Pipeline and then Create API Key
-4. Leave the defaults, and click CreateCreate toolchain
+2. In the **continuous delivery** section of the dashboard, click **Enable**<img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_2.png"></a>
+3. On the Toolchain page, select **Delivery Pipeline** and then **Create API Key**
+4. Leave the defaults, and click **Create**
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_4.png"></a>
 5. Back on the Toolchain page, click the Eclipse Orion Web IDE icon. The IDE opens. Here you can change the code of your application.
-6. Select the file package.json on the left side. In the editor on the right, add a line in the dependencies section: “node-red-contrib-scx-ibmiotapp”: “0.x”Edit package.json in the Eclipse Orion IDE
+6. Select the file **package.json** on the left side. In the editor on the right, add a line in the **dependencies** section: “node-red-contrib-scx-ibmiotapp”: “0.x”Edit package.json in the Eclipse Orion IDE
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_6.png"></a>
 7. Select menu File > Save. Then click the git icon in the left menu.
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_7.png"></a>
-8. On the Git page, first click Commit, then Push. This pushes your change from the Git repository to the Application on the IBM Cloud.Commit and push on the GIT page
+8. On the Git page, first click **Commit**, then **Push**. This pushes your change from the Git repository to the Application on the IBM Cloud.Commit and push on the GIT page
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_8.png"></a>
-9. Click the back arrow to get back to the Toolchain page. Now click Delivery pipeline
-10. On the Delivery Pipeline page, click the play icon next to Build Stage.Run delivery pipeline
+9. Click the back arrow to get back to the Toolchain page. Now click **Delivery pipeline**.
+10. On the Delivery Pipeline page, click the play icon next to Build Stage.
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_10.png"></a>
 
 The build pipeline will take 5 – 10 minutes to complete.
@@ -117,16 +117,27 @@ Next, you need to import the flow into your Node-RED editor.
 ```
 node red code
 ```
-2. In Node-RED, press **Ctrl-I** to open the import nodes dialog. Paste the code, click OK.
+2. In Node-RED, press **Ctrl-I** to open the import nodes dialog. Paste the code, click **OK**.
 3. **Instructions to install moments node and dashboard**
-4. Now you need to adapt the flow to your specific parameters. The only relevant parameter is the Device ID. Double-click the node IBM IoT App out. In the pop-up window, enter the Device ID that you used earlier (for example, 112233445566), and click Import.
-5. Click Deploy in the flow editor. The flow is deployed and should be active immediately.
+4. Now you need to adapt the flow to your specific parameters. The only relevant parameter is the Device ID. Double-click the node IBM IoT App out. In the pop-up window, enter the Device ID that you used earlier (for example, 112233445566), and click **Import**.
+5. Click **Deploy** in the flow editor. The flow is deployed and should be active immediately.
 
 You should have all the resources needed to run the test.
 
-## <a name="trun"></a>Test Runs
-Instructions on how to run the tests for the system (if possible)
+## <a name="trun"></a>Test Run
+If installed successfully, the system should be able to:
+- Track the data sent out by the proximity sensor on your phone
+- Trigger an alert message when there is inactivity (no movement captured by the proximity sensor)
+- Display the alert message and location on the map in the Node-RED dashboard
+
+### End-to-end connection test
+1. To begin, tap your screen once to simulate motion detected by the proximity sensor (and to kickstart the countdown for the alert trigger).
+2. Tap your screen repeatedly at an interval of roughly three seconds. When this is ongoing, there should not be any alert messages appearing on the dashboard.
+3. Whenever you feel like it, stop tapping the screen to simulate inactivity.
+4. After ten seconds, there should be an alert message appearing on the dashboard.
+
+If everything ran smoothly, the end-to-end connection is established.
 
 ## <a name="bwith"></a>Built With
 - Node-RED - Flow editor
-- IBM IoT
+- IBM Watsons IoT Platform - Application and server
