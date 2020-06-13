@@ -101,7 +101,7 @@ First you need to import the nodes ibm iot in and ibm iot out into your Node-RED
 5. Back on the Toolchain page, click the Eclipse Orion Web IDE icon. The IDE opens. Here you can change the code of your application.
 6. Select the file package.json on the left side. In the editor on the right, add a line in the dependencies section: “node-red-contrib-scx-ibmiotapp”: “0.x”Edit package.json in the Eclipse Orion IDE
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_6.png"></a>
-7. Select menu File > Save. Then click the git icon in the left menu.Eclipse Orion IDE
+7. Select menu File > Save. Then click the git icon in the left menu.
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_7.png"></a>
 8. On the Git page, first click Commit, then Push. This pushes your change from the Git repository to the Application on the IBM Cloud.Commit and push on the GIT page
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_8.png"></a>
