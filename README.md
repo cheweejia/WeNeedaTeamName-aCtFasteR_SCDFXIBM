@@ -38,14 +38,30 @@ alt="Solution Pitch Video" width="240" height="180" border="10" /></a>
 <a href="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/DESCRIPTION.md">Link to the detailed solution here.</a>
 
 ## <a name="proad"></a>Project Roadmap
-<img src="ROADMAP" /></a>
+<img src="" /></a>
 
 ## <a name="gstart"></a>Getting Started
 ### Prerequisites
-You will need an account on <a href="https://cloud.ibm.com/login">IBM</a>.
-
+You will need:
+- An account on <a href="https://cloud.ibm.com/login">IBM</a>.
+- Smartphone
 
 ### Installing
+#### Step 1: Create an IoT app in the IBM Cloud
+Work through the tutorial to <a href="https://developer.ibm.com/tutorials/how-to-create-an-internet-of-things-platform-starter-application/">create a Node-RED and Watson IoT Platform starter app</a> in IBM Cloud.
+
+#### Step 2: Add a device that will send MQTT messages to the IBM Watson IoT Platform 
+An organization ID is assigned to your app, and you will need this ID later when developing the mobile app. In the following image, the organization ID is l0y3u1, which is displayed under your login information in the upper right corner of the dashboard.Screen capture of the service on the IBM Internet of Things Platform server and the organization ID highlighted
+Click tab Device Types, then click Add Device Type. In your organization, you can have multiple device types each with multiple devices. A device type is a group of devices that share characteristics; for example, they might provide the same sensor data. In our case, the device type name must be “Android” (this device type name is required by the app that you will use later).
+Click Next. A page is displayed where you can enter metadata about the device type, such as a serial number or model. You don’t need to specify this information for this tutorial. Just click Finish.Screen capture of the add device type page
+Click Register Devices. Enter the device ID. The device ID can be, for example, the MAC address of your smartphone. However, it must be unique within your organization only. Therefore, you might enter, as I did here, something like “112233445566”. Screen capture of the page where device parameters are entered
+Click Next. A page is displayed where you could enter metadata about the device. Leave it blank, and click Next.
+On the security page, enter a value for the authentication token. Remember this value for later. Then, click Next. Screen capture showing authentication token
+Click Finish.
+Now you are ready to send MQTT messages from a device to the IBM Watson IoT Platform.
+
+Import the flow into Node-RED editor flow by copying into clipboard.
+
 
 ## <a name="trun"></a>Test Runs
 Instructions on how to run the tests for the system (if possible)
