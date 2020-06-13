@@ -25,6 +25,6 @@ For the purpose of our demonstration:
 - The checking of false alarm will not be depicted in the flow as the process will be running on the MyResponders App and there is no database set up for now. Similarly, the alert message will not be shown on the MyResponders App itself, but rather on the debug node.
 
 Further improvements
-1. Number of hours stated in our solution is arbituary and subjected to changes according to our trial tests
-2. Caretakers and Next of Kin of elderly have access rights to overwrite and switch off the aCtFasteR system through the Internet based app
-3. Coloured-lights can be installed on the front doors that lights up if the elderly is in distress
+- Number of hours stated in our solution is arbituary and subjected to changes according to our trial tests
+- Caretakers and Next of Kin of elderly have access rights to overwrite and switch off the aCtFasteR system through the Internet based app
+- Coloured-lights can be installed on the front doors that lights up if the elderly is in distress
