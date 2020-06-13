@@ -11,7 +11,7 @@ In the event of a suspected incident, time is of the essence to ensure that the 
 
 ## Breakdown
 1. When a user signs up for aCtFasteR, they will be required to enter their details, which includes phone number, address, next-of-kin details. These data will be stored in a database in the event of an activation.
-2. Proximity sensors will be installed in the house at multiple doorways. Using the proximity sensors to detect motion, data will be sent out to a cloud system whenever the elderly walks past the sensor. This data is processed as activity.  In the event the elderly has to leave the house for an extended period of time, a button will be installed in the house as well to allow the elderly to halt the detection system for twelve hours. After twelve hours or when the proximity sensors detects motion again (whichever comes first), the system will go back online.
+2. Proximity sensors will be installed in the house at multiple doorways. Using the proximity sensors to detect motion, data will be sent out to a cloud system whenever the elderly walks past the sensor. This data is processed as activity.  In the event the elderly has to leave the house for an extended period of time, a button will be installed in the house at the main door as well to allow the elderly to halt the detection system. When the proximity sensor near the main door detects motion will trigger the system will go back online. The detection system will be turned off 1 minute after the button is activated, this prevents the proximity sensor from triggering the system when the elderly exits their home. 
 3. The system is triggered by a timer which will start counting down when there is inactivity. Whenever an activity is detected in daytime (7am to 7pm), the timer will be resetted to six hours and restarts the countdown. The rationale for six hours as our threshold is that as long as the elderly is at home, he/she will have to go through their daily routine and move at least twice during the day. During the night (7pm to 7am), the timer will be resetted to twelve hours to account for sleep.
 4. In the event of an incident and the elderly is unable to move to request for help, the proximity sensors will not detect any activity and hence no data will be sent out to the cloud system. After the countdown duration, the trigger will be set off to attempt to contact the elderly or their next-of-kin through a phone call.
 5. If the elderly was verified to be safe, CFRs will not be alerted and the system will be reset.
@@ -23,3 +23,8 @@ For the purpose of our demonstration:
 - The threshold duration will be reduced to seconds for us to test out the system easily in real time. 
 - Once the app stops sending positive data (no movement recorded by proximity sensor) for the threshold duration, an alert message will be sent out which will appear on the debug node. 
 - The checking of false alarm will not be depicted in the flow as the process will be running on the MyResponders App and there is no database set up for now. Similarly, the alert message will not be shown on the MyResponders App itself, but rather on the debug node.
+
+Further improvements
+1. Number of hours stated in our solution is arbituary and subjected to changes according to our trial tests
+2. Caretakers and Next of Kin of elderly have access rights to overwrite and switch off the aCtFasteR system through the Internet based app
+3. Coloured-lights can be installed on the front doors that lights up if the elderly is in distress
