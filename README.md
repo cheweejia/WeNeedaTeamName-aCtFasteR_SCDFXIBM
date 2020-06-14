@@ -38,7 +38,7 @@ alt="Solution Pitch Video" width="240" height="180" border="10" /></a>
 <a href="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/DESCRIPTION.md">Link to the detailed solution here.</a>
 
 ## <a name="proad"></a>Project Roadmap
-<img src="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/Timeline.jpg" alt="Project Roadmap"/></a>
+<img src="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/Roadmap.jpg" alt="Project Roadmap"/></a>
 
 ## <a name="gstart"></a>Getting Started
 ### Prerequisites
