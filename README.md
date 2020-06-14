@@ -71,7 +71,7 @@ Now you can install .apk files from outside of Google Play using Chrome.
 https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/aCtFasteR.apk
 2. Once downloaded, click **Install** to install the app
 
-The aCtFasteRs app is now installed on your android device.
+The aCtFasteR app is now installed on your android device.
 
 Next you need to configure your Android App.
 
