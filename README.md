@@ -15,11 +15,11 @@ Singapore is expected to become a
 <a href="https://www.rsis.edu.sg/rsis-publication/rsis/co15193-a-super-aged-singapore-policy-implications-for-a-smart-nation/#.XuOL8IHEmhA">“Super-Aged” country</a>
 in 2025, with the number of 
 <a href="https://www.todayonline.com/voices/more-seniors-living-alone-knowing-and-caring-our-neighbours-should-be-norm">elderly living alone in housing estates rising sharply</a> 
-over the years. As emergency resources become more and more strained due to reduced manpower and increased demand, it is crucial for Singapore to develop a culture of inter-dependency. This is exemplified through our increasing reliance on our Community First Responders (CFRs) in providing early intervention during emergencies. For the isolated senior, there is a huge risk that they are unable to receive medical assistance promptly in times of need. This poses an issue for emergency response. Hence, to cope with the rising number of elderly and limited medical resources, there is a need for a highly accurate and precise early detection system for incidents involving our most vulnerable.
+over the years. As emergency resources become more and more strained due to reduced manpower and increased demand, it is crucial for Singapore to develop a culture of inter-dependency. This is exemplified through our increasing reliance on our Community First Responders (CFRs) in providing early intervention during emergencies. For the isolated seniors, there is a huge risk that they are unable to receive medical assistance promptly in times of need. This poses an issue for emergency response. Hence, to cope with the rising number of elderly and limited medical resources, there is a need for a highly accurate and precise early detection system for incidents involving our most vulnerable.
 ### How can technology help?
 Through the use of Internet of Things (IoT) technology, we are now able to monitor the most vulnerable within the confines of their home without invading their privacy. Furthermore, we can notify the CFRs to check in with the elderly in the event of a suspected incident, before raising the issue to higher authorities such as the SCDF. This can help provide more timely medical assistance to the elderly, reduce false alarms and allow for a more efficient allocation of medical resources.
 ### Idea
-A mesh of proximity sensors can be set up in the homes of the elderly to detect motions made by them. This idea assumes that the elderly will move around the house for their daily routine and activities, thus enabling the sensor to detect their motion. However, should the sensor not detect any movement for an extended period of time, it sends an alert to nearby CFRs through the MyResponders Application, for them to check in with the elderly. With the early detection, CFRs can access the situation and call for emergency rescuers if required. Thus, this decreases the time that the elderly is left unattended after an incident, which will be especially useful for severe but not immediately life-threatening incidents which have a moderate sensitivity to time. 
+A mesh of proximity sensors can be set up in the homes of the elderly to detect motions made by them. This idea assumes that the elderly will move around the house for their daily routine and activities, thus enabling the sensor to detect their motion. However, should the sensor not detect any movement for an extended period of time, it sends an alert to nearby CFRs through the MyResponders Application, for them to check in with the elderly. With the early detection, CFRs can access the situation and call for emergency rescuers if required. Thus, this decreases the time that the elderly is left unattended after an incident, which will be especially useful for severe but not immediately life-threatening incidents which have a moderate time sensitivity. 
 
 ## <a name="pv"></a>Pitch Video
 <a href="URL TO VIDEO" target="_blank"><img src="LINK TO A SCREENSHOT OF VIDEO ON YOUTUBE" 
@@ -29,8 +29,8 @@ alt="Solution Pitch Video" width="240" height="180" border="10" /></a>
 <img src="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/Architecture.png" border="10" /></a>
 1. Proximity sensors detect motion and sends data to IBM Watson IoT Platform.
 2. IoT application outputs a message in Node-RED for the data recorded.
-3. Function in Node-RED will trigger an alert message to be sent to the MyResponders App and a dashboard, in the event that there is inactivity for an extended period of time. 
-4. Database containing information of the elderly will release the address along with the alert message.
+3. In the event that there is inactivity for an extended period of time, function in Node-RED will trigger an alert message to be sent to the MyResponders App and a dashboard. 
+4. Database containing information of the elderly will release the elderly's address along with the alert message.
 5. MyResponders App will deploy the nearest CFR to check in with the elderly.
 6. Adminstrators can monitor the dashboard for incidents happening around Singapore.
 
@@ -92,7 +92,7 @@ Next you need to configure your Android App.
 4. Click one of the events. The messages that are sent from your smartphone are in JSON format. They contain proximity and position data.
 
 #### Step 5: Process messages in a Node-RED flow
-First you need to import the nodes ibm iot in and ibm iot out into your Node-RED application. These nodes allow you to easily connect to Watson IoT, but they are not in the palette by default. To do so, you need to create a continuous delivery toolchain and then add dependencies to the application.
+First you need to import the nodes IBM IoT in and IBM IoT out into your Node-RED application. These nodes allow you to easily connect to Watson IoT, but they are not in the palette by default. To do so, you need to create a continuous delivery toolchain and then add dependencies to the application.
 <br>
 1. Open the Overview page of the Node-RED starter application, which you created in Step 1.
 2. In the **continuous delivery** section of the dashboard, click **Enable**<img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_2.png"></a>
@@ -100,7 +100,7 @@ First you need to import the nodes ibm iot in and ibm iot out into your Node-RED
 4. Leave the defaults, and click **Create**
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_4.png"></a>
 5. Back on the Toolchain page, click the Eclipse Orion Web IDE icon. The IDE opens. Here you can change the code of your application.
-6. Select the file **package.json** on the left side. In the editor on the right, add a line in the **dependencies** section: “node-red-contrib-scx-ibmiotapp”: “0.x”Edit package.json in the Eclipse Orion IDE
+6. Select the file **package.json** on the left side. In the editor on the right, under in the Eclipse Orion IDE, add a line in the **dependencies** section: “node-red-contrib-scx-ibmiotapp”: “0.x”Edit package.json
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_6.png"></a>
 7. Select menu File > Save. Then click the git icon in the left menu.
 <img src="https://developer.ibm.com/developer/tutorials/iot-mobile-phone-iot-device-bluemix-apps-trs/images/step005_7.png"></a>
