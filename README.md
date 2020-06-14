@@ -22,8 +22,8 @@ Through the use of Internet of Things (IoT) technology, we are now able to monit
 A mesh of proximity sensors can be set up in the homes of the elderly to detect motions made by them. This idea assumes that the elderly will move around the house for their daily routine and activities, thus enabling the sensor to detect their motion. However, should the sensor not detect any movement for an extended period of time, it sends an alert to nearby CFRs through the MyResponders Application, for them to check in with the elderly. With the early detection, CFRs can access the situation and call for emergency rescuers if required. Thus, this decreases the time that the elderly is left unattended after an incident, which will be especially useful for severe but not immediately life-threatening incidents which have a moderate time sensitivity. 
 
 ## <a name="pv"></a>Pitch Video
-<a href="URL TO VIDEO" target="_blank"><img src="LINK TO A SCREENSHOT OF VIDEO ON YOUTUBE" 
-alt="Solution Pitch Video" width="240" height="180" border="10" /></a>
+<a href="https://youtu.be/E3KT0LeUuN0" target="_blank"><img src="LINK TO A SCREENSHOT OF VIDEO ON YOUTUBE" 
+alt="aCtFasteR Pitch Video" width="240" height="180" border="10" /></a>
 
 ## <a name="archi"></a>Architecture
 <img src="https://github.com/cheweejia/WeNeedaTeamName-aCtFasteR_SCDFXIBM/blob/master/Architecture.png" border="10" /></a>
