@@ -10,7 +10,7 @@ There is a wide range of scenarios that can result in inactivity in the house, f
 1) With a database of the elderly's details, a call will be made to the elderly to confirm his/her well-being. If the elderly cannot be reached, a call will be made to the elderly's next-of-kin if any.
 2) The limit for the duration of inactivity will be extended at night to account for the time that the elderly is asleep. With these measures, our team aims to reduce the chances of false detection by aCtFasteR.
 Note: The exact time whereby the duration of inactivity is extended may be customised depending on one's sleep habits.
-3) A switch will be installed at the front door to turn off the system as the elderly is leaving their home for extended period of time. We hope that this will reduce false alarms by our solution.
+3) A switch will be installed at the front door to turn off the system as the elderly is leaving their home for extended period of time. We hope that this will reduce false alarms caused by our solution.
 ### 3. Time Sensitivity
 In the event of a suspected incident, it is crucial that the elderly receives timely medical assistance as soon as possible. The process to deploy a CFR to the elderly's location has to be expedited. Hence, we have to propose a trigger of an appropriate sensitivity, so that we can render aid to the elderly in distress early. In the event that we are unable to verify an elderly's well-being within 15 minutes (the esimated time for a few phone calls to verify the elderly's well-being), CFRs within the area will be activated to check in with the elderly. This is a fail-safe measure.
 
